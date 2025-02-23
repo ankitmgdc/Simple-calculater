@@ -1,1 +1,39 @@
+def जोड़(x, y):
+    return x + y
+
+def घटाना(x, y):
+    return x - y
+
+def गुणा(x, y):
+    return x * y
+
+def भाग(x, y):
+    if y == 0:
+        return "शून्य से भाग संभव नहीं है"
+    return x / y
+
+print("ऑपरेशन चुनें:")
+print("1. जोड़")
+print("2. घटाना")
+print("3. गुणा")
+print("4. भाग")
+
+चुनाव = input("ऑपरेशन दर्ज करें (1/2/3/4): ")
+
+num1 = float(input("पहला नंबर दर्ज करें: "))
+num2 = float(input("दूसरा नंबर दर्ज करें: "))
+
+if चुनाव == '1':
+    print(num1, "+", num2, "=", जोड़(num1, num2))
+
+elif चुनाव == '2':
+    print(num1, "-", num2, "=", घटाना(num1, num2))
+
+elif चुनाव == '3':
+    print(num1, "*", num2, "=", गुणा(num1, num2))
+
+elif चुनाव == '4':
+    print(num1, "/", num2, "=", भाग(num1, num2))
+else:
+    print("अमान्य इनपुट")
 
